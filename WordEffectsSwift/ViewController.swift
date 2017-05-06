@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     @IBAction func canadianize(_ sender: UIButton) {
         
-        let appended : String = "eh"
+        let appended : String = " eh"
         result.text = textField.text?.appending(appended)
         
     }
