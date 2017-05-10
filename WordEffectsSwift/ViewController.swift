@@ -40,5 +40,21 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func questionTime(_ sender: UIButton) {
+        
+        if (textField.text?.contains("?"))! {
+        result.text = "I don't know"
+            
+        } else if (textField.text?.contains("!"))!{
+            result.text = "Whoa calm down"
+        }
+}
+    @IBAction func despace(_ sender: UIButton) {
+        
+        let newString = textField.text
+        result.text = newString?.replacingOccurrences(of: " ", with: "")
+        
+    }
+    
     
 }
